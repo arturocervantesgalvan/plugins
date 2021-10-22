@@ -65,7 +65,7 @@ class CameraPreview extends StatelessWidget {
       DeviceOrientation.portraitDown: 2,
       DeviceOrientation.landscapeLeft: 3,
     };
-    return turns[_getApplicableOrientation()]!;
+    return 0;
   }
 
   DeviceOrientation _getApplicableOrientation() {
