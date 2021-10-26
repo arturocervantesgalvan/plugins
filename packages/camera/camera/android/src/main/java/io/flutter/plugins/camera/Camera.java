@@ -453,7 +453,7 @@ class Camera
     // Create temporary file.
     final File outputDir = applicationContext.getCacheDir();
     try {
-      captureFile = File.createTempFile("CAP", ".jpg", outputDir);
+      captureFile = File.createTempFile("CAP", ".png", outputDir);
       captureTimeouts.reset();
     } catch (IOException | SecurityException e) {
       dartMessenger.error(flutterResult, "cannotCreateFile", e.getMessage(), null);
