@@ -20,6 +20,7 @@ CameraLensDirection parseCameraLensDirection(String string) {
 
 /// Returns the device orientation as a String.
 String serializeDeviceOrientation(DeviceOrientation orientation) {
+  return 'portraitUp';
   switch (orientation) {
     case DeviceOrientation.portraitUp:
       return 'portraitUp';
@@ -36,6 +37,7 @@ String serializeDeviceOrientation(DeviceOrientation orientation) {
 
 /// Returns the device orientation for a given String.
 DeviceOrientation deserializeDeviceOrientation(String str) {
+  return 'portraitUp';
   switch (str) {
     case "portraitUp":
       return DeviceOrientation.portraitUp;
